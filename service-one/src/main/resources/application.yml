@@ -3,3 +3,10 @@ server:
 spring:
   application:
     name: service-one
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+management:
+  endpoints:
+    enabled-by-default: true

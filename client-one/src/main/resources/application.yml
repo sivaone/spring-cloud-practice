@@ -3,3 +3,15 @@ server:
 spring:
   application:
     name: client-one
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        enabled: true
+    loadbalancer:
+      ribbon:
+        enabled: false
+management:
+  endpoints:
+    enabled-by-default: true
