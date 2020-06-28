@@ -1,0 +1,19 @@
+server:
+  port: 8080
+management:
+  endpoints:
+    enabled-by-default: true
+spring:
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: service-one
+          uri: lb://service-one
+          predicates:
+            - Path=/cars/**

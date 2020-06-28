@@ -19,6 +19,7 @@
     <modules>
         <module>service-one</module>
         <module>client-one</module>
+        <module>gateway</module>
     </modules>
 
     <properties>
